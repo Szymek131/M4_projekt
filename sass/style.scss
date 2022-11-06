@@ -1,0 +1,205 @@
+/*Variables*/
+
+$color-text-light: #fff;
+$color-text-dark: #22333B;
+$color-background-light: #EAE0D5;
+$colo-background-dark: #C6AC8F;
+
+$font-logo: 'Dancing Script', cursive;
+$font-text: 'Merriweather', serif;
+
+
+/*Global*/
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: $font-text;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 2560px;;
+}
+
+/*Navbar*/
+.navigation {
+    margin: 0;
+
+    .container {
+        position: relative;
+        background-image: url('/images/desert.jpg');
+        background-position: center center;
+        background-size: cover;
+
+        .row {
+            justify-content: center;
+            
+            .logo-column {
+                text-align: center;
+                
+                .navbar-logo {
+                    color: $color-text-dark;
+                    font-size: 32px;
+                    font-family: $font-logo;
+                }
+            }
+
+            .button-column {
+                
+
+                .navbar-item {
+                    font-size: 18px;
+                    color: $color-text-light;
+                }
+
+            }
+
+            .splash-column {
+                
+                .splash-title {
+                    font-size: 32px;
+                    text-align: center;
+                    color: $color-text-dark;
+                }
+
+                .splash-subtitle {
+                    font-size: 48px;
+                    text-align: center;
+                    color: $color-text-dark;
+                }
+
+                .splash-button {
+                    text-align: center;
+                    color: $color-text-light;
+                    min-width: 160px;
+                    margin: 24px auto 0 auto;
+                    padding: 16px;
+                    border-radius: 5px;
+                    border-width: 5px;
+                    background-color: $color-text-dark;
+                    background-size: 300%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+/*Services*/
+
+.services {
+    background-color: $colo-background-dark;
+
+    .container {
+
+
+        .row {
+
+            .col-title {
+
+                .services-title {
+                    color: $color-text-dark;
+                    font-size: 32px;
+                }
+
+                .services-title-text {
+                    color: $color-text-light;
+                    font-size: 18px;
+                }
+            }
+
+            .col-services-box {
+
+                .services-text {
+                    color: $color-text-light;
+                    font-size: 16px;
+                }
+
+                .services-subtitle {
+                    color: $color-text-dark;
+                    font-size: 24px;
+                }
+
+                .services-icon {
+                    color: $color-text-dark;
+                    font-size: 24px;
+                    border: 3px solid;
+                    border-radius: 50%;
+                    padding: 12px;
+                    background: $color-background-light;
+                }
+            }
+        }
+    }
+}
+
+/*Portfolio*/
+
+.portfolio {
+    background: $color-background-light;
+    .container{
+        
+        .row {
+
+            .logo-col {
+                font-size: 32px;
+            }
+
+            .img-col {
+                background: #fff;
+                justify-content: space-between;
+                transition: 1.2s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                img {
+                    width: 100%;
+                    height: fit-content;
+                }
+
+                .portfolio-title {
+                    font-size: 22px;
+                }
+
+                .portfolio-subtitle {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+/*Footer*/
+
+.footer {
+
+    .container {
+
+        .row {
+            
+            .copyright-column {
+                font-size: 24px;
+
+                i {
+                    padding-right: 3px;
+                }
+            }
+
+            .icon-column {
+                font-size: 36px;
+
+                i {
+                    padding: 2px;
+                }
+            }
+        }
+    }
+}
