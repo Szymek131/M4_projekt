@@ -128,7 +128,7 @@ body {
             font-size: 24px;
         }
 
-        services-icon {
+        .services-icon {
             color: $color-text-dark;
             font-size: 24px;
             border: 3px solid;
@@ -155,7 +155,7 @@ body {
         }
 
         .img-col {
-            background: #fff;
+            background: $color-background-light;
             justify-content: space-between;
             transition: 1.2s;
 
@@ -183,25 +183,23 @@ body {
 
 .footer {
 
-    .row {
+    .copyright-column {
+        font-size: 24px;
 
-        .copyright-column {
-            font-size: 24px;
-
-            i {
-                padding-right: 3px;
-            }
+        i {
+            padding-right: 3px;
         }
+    }
 
-        .icon-column {
-            font-size: 36px;
+    .icon-column {
+        font-size: 36px;
 
-            .footer-icon {
-                text-decoration: none;
-                color:  $color-text-dark;
-                i {
-                padding: 2px;
-                }
+        .footer-icon {
+            text-decoration: none;
+            color:  $color-text-dark;
+            
+            i {
+            padding: 2px;
             }
         }
     }
