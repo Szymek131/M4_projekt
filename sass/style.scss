@@ -144,37 +144,35 @@ body {
 .portfolio {
     background: $color-background-light;
     
-    .row {
+    .portfolio-title{
+        text-transform: uppercase;
+    }
 
-        .portfolio-title{
-            text-transform: uppercase;
+    .logo-col {
+        font-size: 32px;
+    }
+
+    .img-col {
+        background: $color-text-light;
+        justify-content: space-between;
+        transition: 1.2s;
+        padding: 10px;
+
+        &:hover {
+            transform: scale(1.1);
         }
 
-        .logo-col {
-            font-size: 32px;
+        img {
+            width: 100%;
+            height: fit-content;
         }
 
-        .img-col {
-            background: $color-background-light;
-            justify-content: space-between;
-            transition: 1.2s;
+        .portfolio-box-title {
+            font-size: 20px;
+        }
 
-            &:hover {
-                transform: scale(1.1);
-            }
-
-            img {
-                width: 100%;
-                height: fit-content;
-            }
-
-            .portfolio-box-title {
-                font-size: 20px;
-            }
-
-            .portfolio-subtitle {
-                font-size: 16px;
-            }
+        .portfolio-subtitle {
+            font-size: 16px;
         }
     }
 }
